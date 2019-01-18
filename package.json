@@ -1,0 +1,35 @@
+{
+  "name": "web-version-check",
+  "version": "0.0.1",
+  "description": "web project version checking",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup --config rollup.config.prod.js",
+    "test": "cross-env NODE_ENV=testing rollup --config rollup.config.dev.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrydengchao/web-version-check.git"
+  },
+  "keywords": [
+    "version",
+    "check"
+  ],
+  "author": "dengchao2056@126.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harrydengchao/web-version-check/issues"
+  },
+  "homepage": "https://github.com/harrydengchao/web-version-check#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-serve": "^1.0.0"
+  }
+}
